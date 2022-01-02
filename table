@@ -1,0 +1,29 @@
+CREATE TABLE tbl_Job_details (
+job_id INT PRIMARY KEY,
+job_name VARCHAR(25) NOT NULL,
+job_desc VARCHAR(200) NOT NULL,
+job_opening NUMERIC(10) NOT NULL,
+job_requirement VARCHAR(200) NOT NULL,
+Username VARCHAR(25) FOREIGN KEY REFERENCES tbl_Login(Username)  
+)
+
+Create TABLE tbl_application(
+email varchar(25),
+job_id numeric(25),
+fname varchar(25),
+lname varchar(25),
+note varchar(200),
+resume varchar(100),
+FOREIGN KEY(job_id) REFERENCES tbl_Job_details(job_id)
+)
+
+
+
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney Colege in Virginia, looked up one of the more obscure Latin words, consectetur, from a Loem Isum passage, and going through the cites of the word in cassical literature, discvered the undbtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Borum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Reance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+- At least 2 years of experience in Data Science or closely related fields.
+- Must be skilled in Python/R and SQL
+- Must be proficient in data science-related concepts, including random variables, probability and probability distributions, parameter estimation, hypothesis testing, data indexing and partition, distributed processing frameworks, proficiency in handling and working with multiple forms of data (relational, semi-structured, time series, geo-location, image, text)
+Excellent communication and presentation skills in English
+- Strong working knowledge of Microsoft Office and similar applications
+- Prior teaching experience preferred

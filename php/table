@@ -1,0 +1,53 @@
+create table tbl_jseeker(
+    Js_id int(10) NOT NULL AUTO_INCREMENT,
+	Username varchar(25) NOT NULL,
+    Js_fname varchar(25) NOT NULL,
+    Js_lname varchar(25) NOT NULL,
+    Js_phno varchar(25) NOT NULL,
+    PRIMARY KEY (Js_id),
+	FOREIGN KEY (Username) REFERENCES tbl_Login(Username)
+)
+
+create table tbl_recruiter(
+    R_id int(10) NOT NULL AUTO_INCREMENT,
+	Username varchar(25) NOT NULL,
+    R_fname varchar(25) NOT NULL,
+    R_lname varchar(25) NOT NULL,
+    R_phno varchar(25) NOT NULL,
+    PRIMARY KEY (R_id),
+	FOREIGN KEY (Username) REFERENCES tbl_Login(Username)
+)
+
+
+
+/////////////////CRAP PHP BUG////////////////////////////////////////////////////////////////////////////////////////
+                  <?php   // LOOP TILL END OF DATA 
+
+                          $username_temp= $_SESSION['cust_user'];
+                          $sql_fetch = "SELECT * FROM tbl_company WHERE Username='allenxavier45@gmail.com'";
+                          $result_all = mysqli_query($conn, $sql_fetch);
+                          if($result_all){
+                            echo '<script>alert("Welcome to Geeks for Geekssww23ss")</script>';
+
+                            echo mysqli_error($conn);
+                          }else{
+                            echo '<script>alert("Welcome to Geeks for Geeksswsssw23ss")</script>';
+
+                          }
+                          while($rows1 = mysqli_fetch_array($result_all)) {
+                                
+                    ?>
+/////////////////CRAP PHP BUG////////////////////////////////////////////////////////////////////////////////////////
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney Colege in Virginia, looked up one of the more obscure Latin words, consectetur, from a Loem Isum passage, and going through the cites of the word in cassical literature, discvered the undbtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Borum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.
+
+
+- At least 2 years of experience in Data Science or closely related fields.
+- Must be skilled in Python/R and SQL
+- Must be proficient in data science-related concepts, including random variables, probability and probability distributions, parameter estimation, hypothesis testing, data indexing and partition, distributed processing frameworks, proficiency in handling and working with multiple forms of data (relational, semi-structured, time series, geo-location, image, text)
+Excellent communication and presentation skills in English
+- Strong working knowledge of Microsoft Office and similar applications
+- Prior teaching experience preferredhttps://raw.githubusercontent.com/AllenAJ/AllenAJhalt1/0cd7386589b6444e90ccb3e117c1463c50badedd/Allen_Joseph_resume.pdf
+
+
+
+https://raw.githubusercontent.com/AllenAJ/AllenAJhalt1/0cd7386589b6444e90ccb3e117c1463c50badedd/Allen_Joseph_resume.pdf
